@@ -1,0 +1,22 @@
+/* 
+  Localizable.strings
+  BingPaper
+
+ //  Created by Jingwen Peng on 2016-10-07.
+ //  Edited by Rohit Janga on 2021-05-02.
+ //  Copyright © 2021 Rohit Janga. All rights reserved.
+*/
+
+"BingPaper Preferences" = "BingPaper Preferences";
+
+"General" = "General";
+"About" = "About";
+
+"Version" = "Version";
+
+"Reset Warning" = "Reset Warning";
+"Are you sure to reset you would like to reset the preferences?" = "Are you sure to reset you would like to reset the preferences?";
+"Reset" = "Reset";
+"Cancel" = "Cancel";
+
+"Fetching..." = "Fetching...";

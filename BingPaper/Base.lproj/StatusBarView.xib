@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="18122" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="18122"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner"/>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customObject id="rdI-Bp-mlh" customClass="AppDelegate" customModule="BingPaper" customModuleProvider="target">
+            <connections>
+                <outlet property="popover" destination="0WD-1k-8Xa" id="4dT-0T-XyF"/>
+            </connections>
+        </customObject>
+        <customView id="7xe-pE-msc">
+            <rect key="frame" x="0.0" y="0.0" width="220" height="300"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Tye-0u-m7e">
+                    <rect key="frame" x="68" y="162" width="85" height="32"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <buttonCell key="cell" type="push" title="Today !" bezelStyle="rounded" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="jDq-jy-kaQ">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="today:" target="yPt-f7-kZe" id="nGQ-mz-SPt"/>
+                    </connections>
+                </button>
+                <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EtJ-Ol-Cb2">
+                    <rect key="frame" x="110" y="11" width="50" height="32"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <buttonCell key="cell" type="bevel" title="Quit" bezelStyle="rounded" alignment="center" imageScaling="proportionallyDown" inset="2" id="Hr4-sd-meE">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="quitApplication:" target="yPt-f7-kZe" id="7V2-JM-2rE"/>
+                    </connections>
+                </button>
+                <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mFw-a6-vbi">
+                    <rect key="frame" x="61" y="11" width="50" height="32"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <buttonCell key="cell" type="bevel" title="Prefs" bezelStyle="rounded" alignment="center" imageScaling="proportionallyDown" inset="2" id="6M6-Uk-yrH">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="launchPreferencesWindow:" target="yPt-f7-kZe" id="mAP-yP-obe"/>
+                    </connections>
+                </button>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="o2v-Zn-xFQ">
+                    <rect key="frame" x="93" y="229" width="90" height="22"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="BingPaper" id="VwN-ZN-Spn">
+                        <font key="font" metaFont="system" size="18"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pgR-WI-LWb">
+                    <rect key="frame" x="36" y="162" width="37" height="32"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <buttonCell key="cell" type="push" bezelStyle="rounded" image="NSLeftFacingTriangleTemplate" imagePosition="overlaps" alignment="center" enabled="NO" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="L4Q-5B-vfk">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="previousDay:" target="yPt-f7-kZe" id="vUw-PS-O6z"/>
+                    </connections>
+                </button>
+                <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JdA-LM-ElN">
+                    <rect key="frame" x="148" y="162" width="37" height="32"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <buttonCell key="cell" type="push" bezelStyle="rounded" image="NSRightFacingTriangleTemplate" imagePosition="overlaps" alignment="center" enabled="NO" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="3eT-1H-Sm2">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="nextDay:" target="yPt-f7-kZe" id="Fqy-kx-K7P"/>
+                    </connections>
+                </button>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8Cz-mh-mg1">
+                    <rect key="frame" x="40" y="139" width="141" height="17"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" allowsUndo="NO" sendsActionOnEndEditing="YES" alignment="center" title="2016-09-09" placeholderString="" id="077-MH-XsJ">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="disabledControlTextColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="C4n-yP-ACp">
+                    <rect key="frame" x="32" y="210" width="60" height="60"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Bing" imagePosition="overlaps" alignment="center" imageScaling="proportionallyDown" inset="2" id="JfM-a6-aKy">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="logoClicked:" target="yPt-f7-kZe" id="pbm-qZ-rhh"/>
+                    </connections>
+                </button>
+                <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DAH-5N-LM1">
+                    <rect key="frame" x="28" y="52" width="164" height="80"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <buttonCell key="cell" type="bevel" bezelStyle="regularSquare" alignment="center" imageScaling="axesIndependently" inset="2" id="R7D-hG-r6g">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <string key="title">苏拉群岛上的苏格兰松树
+松恩-菲尤拉讷
+挪威
+© Orsolya Haarberg</string>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="wallpaperInfoButtonClicked:" target="yPt-f7-kZe" id="YSQ-OZ-tSg"/>
+                    </connections>
+                </button>
+            </subviews>
+            <point key="canvasLocation" x="-586" y="-283"/>
+        </customView>
+        <customObject id="XW9-IT-P7a" customClass="NSFontManager"/>
+        <customObject id="yPt-f7-kZe" customClass="StatusBarViewController" customModule="BingPaper" customModuleProvider="target">
+            <connections>
+                <outlet property="dateTextField" destination="8Cz-mh-mg1" id="Qv5-LU-3gy"/>
+                <outlet property="nextDayButton" destination="JdA-LM-ElN" id="mnm-Yx-Cza"/>
+                <outlet property="previousDayButton" destination="pgR-WI-LWb" id="wtD-yT-D8f"/>
+                <outlet property="todayButton" destination="Tye-0u-m7e" id="n38-YA-Bm6"/>
+                <outlet property="wallpaperInfoButton" destination="DAH-5N-LM1" id="kCV-QE-sfx"/>
+            </connections>
+        </customObject>
+        <viewController id="F95-OJ-xb7" userLabel="Popover View Controller">
+            <connections>
+                <outlet property="view" destination="7xe-pE-msc" id="JcF-ek-hif"/>
+            </connections>
+        </viewController>
+        <popover id="0WD-1k-8Xa">
+            <connections>
+                <outlet property="contentViewController" destination="F95-OJ-xb7" id="AsI-0J-Fd2"/>
+            </connections>
+        </popover>
+    </objects>
+    <resources>
+        <image name="Bing" width="60" height="60"/>
+        <image name="NSLeftFacingTriangleTemplate" width="10" height="14"/>
+        <image name="NSRightFacingTriangleTemplate" width="10" height="14"/>
+    </resources>
+</document>
