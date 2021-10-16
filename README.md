@@ -19,8 +19,6 @@ Use Bing daily photo as your wallpaper for macOS.
 
 ### Build from Source
 
-Also can you build the application from source code.
-
 ___Download or Clone the Project___
 
 ``` bash
